@@ -65,6 +65,22 @@ print(uci)
   
 1:1 is a fair bet in a 35 person class
   
+```{r}
+bank = vector('numeric')
+for (i in 1:100) {
+  bank[i] = BrLw(35, 2, 637)
+}
+meanbank=mean(bank)
+print(meanbank)
+hist(bank)
+lci=mean(bank)-sqrt(var(bank))*1.96
+uci=mean(bank)+sqrt(var(bank))*1.96
+print(lci)
+print(uci)
+```
+  
+Average amount is $280
+  
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
 ```{r}
