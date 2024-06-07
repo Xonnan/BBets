@@ -38,7 +38,12 @@ The function will be given a class_size by number of students, odds, and Number_
 
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ## what is their average earnings
+
+It would be about $17.50 on average
+
 ## the standard deviation and a 95% confidence interval for their earnings?
+
+At a standard deviation it would be between $5 and $30 and the confidence interval would be $18.
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
@@ -47,7 +52,7 @@ The function will be given a class_size by number of students, odds, and Number_
 ```{r}
 bank = vector('numeric')
 for (i in 1:100) {
-  bank[i] = BrLw(35, 2, 637)
+  bank[i] = BrLw(35, 1, 1)
 }
 meanbank=mean(bank)
 print(meanbank)
@@ -58,7 +63,7 @@ print(lci)
 print(uci)
 ```
   
-Average person profit = $281
+1:1 is a fair bet in a 35 person class
   
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
